@@ -253,7 +253,7 @@ export default function CivilBillingAutomationPage() {
             <div>
               <h3 className="text-sm font-medium mb-2 text-foreground">External</h3>
               <a
-                href="https://www.civilbilling.com"
+                href="https://app.templateinvoices.com"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-sm text-foreground hover:text-muted-foreground transition-colors underline"
