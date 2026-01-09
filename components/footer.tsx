@@ -25,7 +25,7 @@ export function Footer() {
             <ul className="space-y-2 sm:space-y-3 text-xs sm:text-sm">
               <li>
                 <Link
-                  href="mailto:contact@sanforddinkins.com"
+                  href="mailto:sbdinkins@gmail.com"
                   className="text-zinc-400 hover:text-zinc-100 transition-colors"
                 >
                   Email
