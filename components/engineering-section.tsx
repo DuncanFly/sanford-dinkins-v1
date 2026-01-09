@@ -1,3 +1,5 @@
+import Link from "next/link"
+
 const areasOfPractice = [
   "Site civil land development",
   "Grading and earthwork design",
@@ -73,6 +75,14 @@ export function EngineeringSection() {
                 same disciplined thinking that governs my engineering work also informs the systems and tools I build
                 beyond traditional design.
               </p>
+              <div className="mt-6">
+                <Link
+                  href="/projects/site-civil-engineering"
+                  className="text-sm text-zinc-900 hover:text-zinc-600 transition-colors underline decoration-zinc-300 hover:decoration-zinc-900"
+                >
+                  Site Civil Engineering & Land Development Experience →
+                </Link>
+              </div>
             </div>
           </div>
         </div>
