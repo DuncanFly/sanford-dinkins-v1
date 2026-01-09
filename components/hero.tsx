@@ -198,44 +198,44 @@ export function Hero() {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 max-w-4xl mx-auto px-6 text-center">
+      <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 text-center">
         <div className="opacity-0 animate-fade-in-up">
-          <p className="text-sm uppercase tracking-[0.3em] text-zinc-500 mb-6 font-mono">
+          <p className="text-[10px] sm:text-xs md:text-sm uppercase tracking-[0.2em] sm:tracking-[0.3em] text-zinc-500 mb-4 sm:mb-6 font-mono">
             Civil Engineering · Systems Design · Automation
           </p>
         </div>
 
-        <h1 className="text-5xl sm:text-6xl md:text-7xl font-light tracking-tight text-zinc-100 mb-8 opacity-0 animate-fade-in-up delay-200">
+        <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-light tracking-tight text-zinc-100 mb-6 sm:mb-8 opacity-0 animate-fade-in-up delay-200">
           Sanford Dinkins, PE
         </h1>
 
-        <p className="text-xl sm:text-2xl text-zinc-400 mb-6 font-light opacity-0 animate-fade-in-up delay-300">
+        <p className="text-lg sm:text-xl md:text-2xl text-zinc-400 mb-4 sm:mb-6 font-light opacity-0 animate-fade-in-up delay-300">
           Engineering solutions across physical and digital systems.
         </p>
 
-        <p className="text-base text-zinc-500 max-w-2xl mx-auto mb-12 leading-relaxed opacity-0 animate-fade-in-up delay-400">
+        <p className="text-sm sm:text-base text-zinc-500 max-w-2xl mx-auto mb-8 sm:mb-12 leading-relaxed opacity-0 animate-fade-in-up delay-400 px-4">
           Licensed Professional Engineer specializing in site civil land development, with parallel experience designing
           scalable digital tools, automation systems, and engineering workflows.
         </p>
 
-        <div className="flex flex-col sm:flex-row items-center justify-center gap-4 opacity-0 animate-fade-in-up delay-500">
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4 opacity-0 animate-fade-in-up delay-500 px-4">
           <Button
             onClick={() => scrollToSection("experience")}
-            className="px-8 py-6 text-sm font-medium tracking-wide bg-zinc-100 text-zinc-950 hover:bg-zinc-200"
+            className="w-full sm:w-auto px-6 sm:px-8 py-5 sm:py-6 text-sm font-medium tracking-wide bg-zinc-100 text-zinc-950 hover:bg-zinc-200"
           >
             View Experience
           </Button>
           <Button
             variant="ghost"
             onClick={() => scrollToSection("projects")}
-            className="px-8 py-6 text-sm font-medium tracking-wide text-zinc-400 hover:text-zinc-100 hover:bg-zinc-800/50"
+            className="w-full sm:w-auto px-6 sm:px-8 py-5 sm:py-6 text-sm font-medium tracking-wide text-zinc-400 hover:text-zinc-100 hover:bg-zinc-800/50"
           >
             Explore Projects
           </Button>
         </div>
 
         {/* Scroll indicator */}
-        <div className="absolute bottom-12 left-1/2 -translate-x-1/2 opacity-0 animate-fade-in-up delay-700">
+        <div className="absolute bottom-8 sm:bottom-12 left-1/2 -translate-x-1/2 opacity-0 animate-fade-in-up delay-700 hidden sm:block">
           <div className="w-6 h-10 rounded-full border border-zinc-700 flex items-start justify-center p-2">
             <div className="w-1 h-2 rounded-full bg-zinc-500 animate-bounce" />
           </div>

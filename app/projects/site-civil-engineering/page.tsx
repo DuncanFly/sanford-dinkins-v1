@@ -56,23 +56,23 @@ export default function SiteCivilEngineeringPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
 
       <nav className="border-b border-border">
-        <div className="max-w-4xl mx-auto px-6 py-4">
-          <Link href="/" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 py-3 sm:py-4">
+          <Link href="/" className="text-xs sm:text-sm text-muted-foreground hover:text-foreground transition-colors">
             ← Sanford Dinkins, PE
           </Link>
         </div>
       </nav>
 
-      <article className="max-w-4xl mx-auto px-6 py-16 space-y-16">
+      <article className="max-w-4xl mx-auto px-4 sm:px-6 py-12 sm:py-14 md:py-16 space-y-12 sm:space-y-14 md:space-y-16">
         {/* Hero Section */}
-        <header className="space-y-4">
-          <h1 className="text-4xl md:text-5xl font-light text-foreground tracking-tight">
+        <header className="space-y-3 sm:space-y-4">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-light text-foreground tracking-tight">
             Site Civil Engineering & Land Development
           </h1>
-          <p className="text-xl text-muted-foreground">
+          <p className="text-lg sm:text-xl text-muted-foreground">
             Professional engineering for grading, drainage, stormwater, utilities, and permitting
           </p>
-          <div className="flex flex-wrap gap-4 text-sm text-muted-foreground pt-2">
+          <div className="flex flex-wrap gap-3 sm:gap-4 text-xs sm:text-sm text-muted-foreground pt-2">
             <div>
               <span className="font-medium text-foreground">Role:</span> Licensed Professional Engineer
             </div>
@@ -83,8 +83,8 @@ export default function SiteCivilEngineeringPage() {
         </header>
 
         {/* Problem Statement */}
-        <section className="space-y-6">
-          <h2 className="text-sm uppercase tracking-[0.2em] text-muted-foreground font-mono">Problem Statement</h2>
+        <section className="space-y-4 sm:space-y-6">
+          <h2 className="text-xs sm:text-sm uppercase tracking-[0.2em] text-muted-foreground font-mono">Problem Statement</h2>
           <div className="space-y-4 text-foreground leading-relaxed">
             <p>
               Site civil engineering is the process of transforming raw land into functional, safe, and legally
@@ -106,11 +106,11 @@ export default function SiteCivilEngineeringPage() {
         </section>
 
         {/* Solution & Approach */}
-        <section className="space-y-6">
-          <h2 className="text-sm uppercase tracking-[0.2em] text-muted-foreground font-mono">
+        <section className="space-y-4 sm:space-y-6">
+          <h2 className="text-xs sm:text-sm uppercase tracking-[0.2em] text-muted-foreground font-mono">
             Solution & Approach
           </h2>
-          <div className="space-y-6 text-foreground leading-relaxed">
+          <div className="space-y-4 sm:space-y-6 text-sm sm:text-base text-foreground leading-relaxed">
             <p>
               Professional civil engineering services address these challenges through systematic planning, iterative
               refinement, and disciplined quality assurance.
@@ -178,8 +178,8 @@ export default function SiteCivilEngineeringPage() {
         </section>
 
         {/* Technical Stack */}
-        <section className="space-y-6">
-          <h2 className="text-sm uppercase tracking-[0.2em] text-muted-foreground font-mono">Technical Stack</h2>
+        <section className="space-y-4 sm:space-y-6">
+          <h2 className="text-xs sm:text-sm uppercase tracking-[0.2em] text-muted-foreground font-mono">Technical Stack</h2>
           <div className="space-y-4">
             <div>
               <h3 className="text-sm font-medium mb-2 text-foreground">Design Software</h3>
@@ -201,8 +201,8 @@ export default function SiteCivilEngineeringPage() {
         </section>
 
         {/* Impact & Outcomes */}
-        <section className="space-y-6">
-          <h2 className="text-sm uppercase tracking-[0.2em] text-muted-foreground font-mono">
+        <section className="space-y-4 sm:space-y-6">
+          <h2 className="text-xs sm:text-sm uppercase tracking-[0.2em] text-muted-foreground font-mono">
             Impact & Outcomes
           </h2>
           <div className="space-y-4 text-foreground leading-relaxed">
@@ -224,8 +224,8 @@ export default function SiteCivilEngineeringPage() {
         </section>
 
         {/* Skills Demonstrated */}
-        <section className="space-y-6">
-          <h2 className="text-sm uppercase tracking-[0.2em] text-muted-foreground font-mono">
+        <section className="space-y-4 sm:space-y-6">
+          <h2 className="text-xs sm:text-sm uppercase tracking-[0.2em] text-muted-foreground font-mono">
             Skills Demonstrated
           </h2>
           <div className="flex flex-wrap gap-2">
@@ -245,8 +245,8 @@ export default function SiteCivilEngineeringPage() {
         </section>
 
         {/* Related Projects */}
-        <section className="space-y-6 pt-8 border-t border-border">
-          <h2 className="text-sm uppercase tracking-[0.2em] text-muted-foreground font-mono">Related Projects</h2>
+        <section className="space-y-4 sm:space-y-6 pt-6 sm:pt-8 border-t border-border">
+          <h2 className="text-xs sm:text-sm uppercase tracking-[0.2em] text-muted-foreground font-mono">Related Projects</h2>
           <div className="grid gap-4">
             <Link
               href="/projects/civil-billing-automation"

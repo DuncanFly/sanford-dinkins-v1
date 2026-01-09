@@ -98,39 +98,39 @@ const projects = [
 export function ProjectsSection() {
   return (
     <section id="projects" className="bg-zinc-950 noise-texture">
-      <div className="max-w-6xl mx-auto px-6 py-32">
-        <div className="mb-20">
-          <p className="text-sm uppercase tracking-[0.2em] text-zinc-500 mb-4 font-mono">Projects & Systems</p>
-          <h2 className="text-4xl md:text-5xl font-light text-zinc-100 tracking-tight mb-8">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 py-16 sm:py-24 md:py-32">
+        <div className="mb-12 sm:mb-16 md:mb-20">
+          <p className="text-xs sm:text-sm uppercase tracking-[0.2em] text-zinc-500 mb-3 sm:mb-4 font-mono">Projects & Systems</p>
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-light text-zinc-100 tracking-tight mb-6 sm:mb-8">
             Digital Tools & Automation
           </h2>
-          <div className="max-w-3xl space-y-4">
-            <p className="text-lg text-zinc-300 leading-relaxed">
+          <div className="max-w-3xl space-y-3 sm:space-y-4">
+            <p className="text-base sm:text-lg text-zinc-300 leading-relaxed">
               In parallel with my engineering practice, I design and build digital systems that remove friction from
               professional workflows—particularly in engineering, accounting, billing, and technical documentation.
             </p>
-            <p className="text-zinc-500 leading-relaxed">
+            <p className="text-sm sm:text-base text-zinc-500 leading-relaxed">
               These are not experiments. They are working systems built to solve real problems I encountered firsthand.
             </p>
-            <p className="text-zinc-200 font-medium">Same engineering mindset. Different medium.</p>
+            <p className="text-sm sm:text-base text-zinc-200 font-medium">Same engineering mindset. Different medium.</p>
           </div>
         </div>
 
-        <div className="space-y-6">
+        <div className="space-y-4 sm:space-y-6">
           {projects.map((project, index) => (
             <Link key={index} href={project.link} className="block">
               <Card className="group bg-zinc-900/50 border-zinc-800/50 backdrop-blur-sm transition-all duration-300 hover:bg-zinc-900/80 hover:border-zinc-700/50 hover:shadow-[0_8px_30px_rgba(0,0,0,0.3)] cursor-pointer">
-                <CardHeader className="pb-4">
-                  <CardTitle className="text-xl font-medium text-zinc-100">{project.title}</CardTitle>
+                <CardHeader className="pb-3 sm:pb-4">
+                  <CardTitle className="text-lg sm:text-xl font-medium text-zinc-100">{project.title}</CardTitle>
                   {(project.role || project.focus) && (
-                    <div className="flex flex-wrap gap-x-6 gap-y-1 text-sm text-zinc-500 mt-2">
+                    <div className="flex flex-wrap gap-x-4 sm:gap-x-6 gap-y-1 text-xs sm:text-sm text-zinc-500 mt-2">
                       {project.role && <span>Role: {project.role}</span>}
                       {project.focus && <span>Focus: {project.focus}</span>}
                     </div>
                   )}
                 </CardHeader>
-                <CardContent className="space-y-4">
-                  <p className="text-zinc-400 leading-relaxed">{project.description}</p>
+                <CardContent className="space-y-3 sm:space-y-4">
+                  <p className="text-sm sm:text-base text-zinc-400 leading-relaxed">{project.description}</p>
 
                   {project.capabilities.length > 0 && (
                     <ul className="space-y-2 pl-4">
@@ -163,12 +163,12 @@ export function ProjectsSection() {
         </div>
 
         {/* Portfolio Gateway */}
-        <div className="mt-24 pt-16 border-t border-zinc-800/50">
-          <h3 className="text-xl font-medium text-zinc-100 mb-6">Systems & Platforms</h3>
-          <p className="text-zinc-400 leading-relaxed max-w-2xl mb-8">
+        <div className="mt-16 sm:mt-20 md:mt-24 pt-12 sm:pt-14 md:pt-16 border-t border-zinc-800/50">
+          <h3 className="text-lg sm:text-xl font-medium text-zinc-100 mb-4 sm:mb-6">Systems & Platforms</h3>
+          <p className="text-sm sm:text-base text-zinc-400 leading-relaxed max-w-2xl mb-6 sm:mb-8">
             A growing collection of applications, tools, and platforms spanning:
           </p>
-          <ul className="grid md:grid-cols-2 gap-x-20 gap-y-3 max-w-2xl">
+          <ul className="grid sm:grid-cols-2 gap-x-8 sm:gap-x-12 md:gap-x-20 gap-y-2 sm:gap-y-3 max-w-2xl">
             {[
               "Engineering billing and reporting",
               "Surveying automation",
@@ -176,13 +176,13 @@ export function ProjectsSection() {
               "AI-assisted documentation",
               "Internal workflow systems",
             ].map((item, index) => (
-              <li key={index} className="text-zinc-500 text-sm flex items-start gap-3">
+              <li key={index} className="text-zinc-500 text-xs sm:text-sm flex items-start gap-3">
                 <span className="w-1 h-1 bg-zinc-600 rounded-full mt-2 shrink-0" />
                 {item}
               </li>
             ))}
           </ul>
-          <p className="text-zinc-600 text-sm mt-8">
+          <p className="text-zinc-600 text-xs sm:text-sm mt-6 sm:mt-8">
             This site serves as a hub, with individual projects evolving independently as needs arise.
           </p>
         </div>
