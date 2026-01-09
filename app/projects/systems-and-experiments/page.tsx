@@ -3,8 +3,23 @@ import Link from "next/link"
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: "Systems Architecture & Experimental Tools | Sanford Dinkins, PE",
+  title: "Systems Architecture & Experimental Tools",
   description: "Collection of experimental platforms, internal tools, and system architecture projects including EverydayLayer, Truncs, Paws & Palate, and financial tools.",
+  keywords: ["systems architecture", "experimental tools", "internal systems", "automation", "prototyping", "Sanford Dinkins"],
+  openGraph: {
+    title: "Systems Architecture & Experimental Tools | Sanford Dinkins, PE",
+    description: "Collection of experimental platforms, internal tools, and system architecture projects including EverydayLayer, Truncs, Paws & Palate, and financial tools.",
+    url: "https://sanforddinkins.com/projects/systems-and-experiments",
+    type: "article",
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Systems Architecture - Sanford Dinkins, PE",
+      },
+    ],
+  },
 }
 
 export default function SystemsAndExperimentsPage() {

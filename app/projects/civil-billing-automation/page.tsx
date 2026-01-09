@@ -3,8 +3,23 @@ import Link from "next/link"
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: "Civil Billing & Engineering Workflow Automation | Sanford Dinkins, PE",
+  title: "Civil Billing & Engineering Workflow Automation",
   description: "Automated civil engineering billing system integrating QuickBooks Online and QuickBooks Time for accurate progress billing, time tracking, and engineering-specific reporting.",
+  keywords: ["civil billing", "engineering automation", "QuickBooks integration", "progress billing", "civil engineering workflow", "Sanford Dinkins"],
+  openGraph: {
+    title: "Civil Billing & Engineering Workflow Automation | Sanford Dinkins, PE",
+    description: "Automated civil engineering billing system integrating QuickBooks Online and QuickBooks Time for accurate progress billing, time tracking, and engineering-specific reporting.",
+    url: "https://sanforddinkins.com/projects/civil-billing-automation",
+    type: "article",
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Civil Billing Automation - Sanford Dinkins, PE",
+      },
+    ],
+  },
 }
 
 export default function CivilBillingAutomationPage() {

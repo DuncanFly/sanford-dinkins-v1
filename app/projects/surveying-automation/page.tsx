@@ -3,8 +3,23 @@ import Link from "next/link"
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: "Land Surveying Automation & Technical Tools | Sanford Dinkins, PE",
+  title: "Land Surveying Automation & Technical Tools",
   description: "Workflow automation and technical tools for land surveying operations, including job organization, time tracking, reporting, and structured data access.",
+  keywords: ["land surveying", "survey automation", "workflow automation", "operations management", "surveying tools", "Sanford Dinkins"],
+  openGraph: {
+    title: "Land Surveying Automation & Technical Tools | Sanford Dinkins, PE",
+    description: "Workflow automation and technical tools for land surveying operations, including job organization, time tracking, reporting, and structured data access.",
+    url: "https://sanforddinkins.com/projects/surveying-automation",
+    type: "article",
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Land Surveying Automation - Sanford Dinkins, PE",
+      },
+    ],
+  },
 }
 
 export default function SurveyingAutomationPage() {

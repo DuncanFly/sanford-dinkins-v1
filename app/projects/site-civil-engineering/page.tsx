@@ -3,8 +3,23 @@ import Link from "next/link"
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: "Site Civil Engineering & Land Development | Sanford Dinkins, PE",
+  title: "Site Civil Engineering & Land Development",
   description: "Professional site civil engineering and land development experience including grading, drainage, stormwater systems, utilities coordination, permitting, and agency coordination.",
+  keywords: ["site civil engineering", "land development", "grading design", "drainage design", "stormwater management", "utilities coordination", "civil engineering", "Sanford Dinkins"],
+  openGraph: {
+    title: "Site Civil Engineering & Land Development | Sanford Dinkins, PE",
+    description: "Professional site civil engineering and land development experience including grading, drainage, stormwater systems, utilities coordination, permitting, and agency coordination.",
+    url: "https://sanforddinkins.com/projects/site-civil-engineering",
+    type: "article",
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Site Civil Engineering - Sanford Dinkins, PE",
+      },
+    ],
+  },
 }
 
 export default function SiteCivilEngineeringPage() {

@@ -3,8 +3,23 @@ import Link from "next/link"
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: "StudyGuidesAI | Sanford Dinkins, PE",
+  title: "StudyGuidesAI",
   description: "Educational platform designed to convert complex material into structured, digestible study guides with AI-assisted summarization and curated structure.",
+  keywords: ["study guides", "AI education", "learning tools", "technical documentation", "knowledge management", "Sanford Dinkins"],
+  openGraph: {
+    title: "StudyGuidesAI | Sanford Dinkins, PE",
+    description: "Educational platform designed to convert complex material into structured, digestible study guides with AI-assisted summarization and curated structure.",
+    url: "https://sanforddinkins.com/projects/studyguidesai",
+    type: "article",
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "StudyGuidesAI - Sanford Dinkins, PE",
+      },
+    ],
+  },
 }
 
 export default function StudyGuidesAIPage() {
