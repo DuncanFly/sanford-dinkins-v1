@@ -5,6 +5,9 @@ import type { Metadata } from "next"
 export const metadata: Metadata = {
   title: "Systems Architecture & Experimental Tools | Sanford Dinkins, PE",
   description: "Collection of experimental platforms, internal tools, and system architecture projects including EverydayLayer, Truncs, Paws & Palate, and financial tools.",
+  alternates: {
+    canonical: "/projects/systems-and-experiments",
+  },
 }
 
 export default function SystemsAndExperimentsPage() {

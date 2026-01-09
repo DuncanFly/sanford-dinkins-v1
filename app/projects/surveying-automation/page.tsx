@@ -5,6 +5,9 @@ import type { Metadata } from "next"
 export const metadata: Metadata = {
   title: "Land Surveying Automation & Technical Tools | Sanford Dinkins, PE",
   description: "Workflow automation and technical tools for land surveying operations, including job organization, time tracking, reporting, and structured data access.",
+  alternates: {
+    canonical: "/projects/surveying-automation",
+  },
 }
 
 export default function SurveyingAutomationPage() {

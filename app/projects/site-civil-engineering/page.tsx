@@ -5,6 +5,9 @@ import type { Metadata } from "next"
 export const metadata: Metadata = {
   title: "Site Civil Engineering & Land Development | Sanford Dinkins, PE",
   description: "Professional site civil engineering and land development experience including grading, drainage, stormwater systems, utilities coordination, permitting, and agency coordination.",
+  alternates: {
+    canonical: "/projects/site-civil-engineering",
+  },
 }
 
 export default function SiteCivilEngineeringPage() {

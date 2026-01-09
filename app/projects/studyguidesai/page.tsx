@@ -5,6 +5,9 @@ import type { Metadata } from "next"
 export const metadata: Metadata = {
   title: "StudyGuidesAI | Sanford Dinkins, PE",
   description: "Educational platform designed to convert complex material into structured, digestible study guides with AI-assisted summarization and curated structure.",
+  alternates: {
+    canonical: "/projects/studyguidesai",
+  },
 }
 
 export default function StudyGuidesAIPage() {

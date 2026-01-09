@@ -5,6 +5,9 @@ import type { Metadata } from "next"
 export const metadata: Metadata = {
   title: "Civil Billing & Engineering Workflow Automation | Sanford Dinkins, PE",
   description: "Automated civil engineering billing system integrating QuickBooks Online and QuickBooks Time for accurate progress billing, time tracking, and engineering-specific reporting.",
+  alternates: {
+    canonical: "/projects/civil-billing-automation",
+  },
 }
 
 export default function CivilBillingAutomationPage() {
