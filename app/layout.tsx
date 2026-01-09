@@ -13,6 +13,11 @@ export const metadata: Metadata = {
   description:
     "Licensed Professional Engineer specializing in site civil land development, with parallel experience designing scalable digital systems and tools.",
   generator: "v0.app",
+
+  verification: {
+    google: "AYc-DS789zobKZHzY6mhzFDOhJGbzaGXIPigYKSv_RM",
+  },
+
   icons: {
     icon: [
       {
@@ -45,7 +50,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`font-sans antialiased`}>
+      <body className="font-sans antialiased">
         {children}
         <Analytics />
       </body>
