@@ -3,10 +3,27 @@ import Link from "next/link"
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: "Civil Billing & Engineering Workflow Automation | Sanford Dinkins, PE",
-  description: "Automated civil engineering billing system integrating QuickBooks Online and QuickBooks Time for accurate progress billing, time tracking, and engineering-specific reporting.",
+  title: "Civil Engineering Billing Automation | QuickBooks Integration for Engineering Firms",
+  description: "Engineering-grade billing automation platform for civil firms. Automated QuickBooks Online and QuickBooks Time integration for progress billing, time tracking, engineering contract management, and accurate invoicing. Eliminates manual spreadsheet workflows and billing errors.",
+  keywords: [
+    "civil engineering billing software",
+    "engineering billing automation",
+    "QuickBooks for civil engineers",
+    "engineering time tracking",
+    "progress billing automation",
+    "civil firm billing system",
+    "engineering workflow automation",
+    "QuickBooks Online integration",
+    "engineering contract billing",
+    "automated invoicing for engineers",
+  ],
   alternates: {
     canonical: "/projects/civil-billing-automation",
+  },
+  openGraph: {
+    title: "Civil Engineering Billing Automation | QuickBooks Integration for Engineering Firms",
+    description: "Engineering-grade billing automation platform for civil firms. Automated QuickBooks integration for progress billing, time tracking, and accurate invoicing.",
+    url: "https://www.sanforddinkins.com/projects/civil-billing-automation",
   },
 }
 

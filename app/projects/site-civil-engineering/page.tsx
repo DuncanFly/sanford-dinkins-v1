@@ -3,10 +3,26 @@ import Link from "next/link"
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: "Site Civil Engineering & Land Development | Sanford Dinkins, PE",
-  description: "Professional site civil engineering and land development experience including grading, drainage, stormwater systems, utilities coordination, permitting, and agency coordination.",
+  title: "Site Civil Engineering & Land Development Services | Professional Engineer",
+  description: "Licensed PE with site civil engineering expertise in grading design, drainage systems, stormwater management, utilities coordination, and municipal permitting for land development projects. Professional civil engineering services with quality assurance and regulatory compliance.",
+  keywords: [
+    "site civil engineering",
+    "land development engineer",
+    "grading and drainage design",
+    "stormwater management systems",
+    "civil engineering permitting",
+    "utilities coordination",
+    "professional engineer land development",
+    "site development PE",
+    "civil engineering QA/QC",
+  ],
   alternates: {
     canonical: "/projects/site-civil-engineering",
+  },
+  openGraph: {
+    title: "Site Civil Engineering & Land Development Services | Professional Engineer",
+    description: "Licensed PE with site civil engineering expertise in grading design, drainage systems, stormwater management, utilities coordination, and municipal permitting for land development projects.",
+    url: "https://www.sanforddinkins.com/projects/site-civil-engineering",
   },
 }
 

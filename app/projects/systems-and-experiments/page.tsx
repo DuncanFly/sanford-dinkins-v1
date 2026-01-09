@@ -3,10 +3,25 @@ import Link from "next/link"
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: "Systems Architecture & Experimental Tools | Sanford Dinkins, PE",
-  description: "Collection of experimental platforms, internal tools, and system architecture projects including EverydayLayer, Truncs, Paws & Palate, and financial tools.",
+  title: "Systems Architecture & Experimental Software Tools | Engineering Systems Design",
+  description: "Collection of experimental platforms, internal automation tools, and system architecture projects. Includes knowledge management systems, workflow automation, financial tools, and proof-of-concept software demonstrating systems design and technical problem-solving capabilities.",
+  keywords: [
+    "systems architecture",
+    "software engineering projects",
+    "automation tools",
+    "internal tools development",
+    "system design",
+    "engineering software",
+    "workflow automation",
+    "technical prototypes",
+  ],
   alternates: {
     canonical: "/projects/systems-and-experiments",
+  },
+  openGraph: {
+    title: "Systems Architecture & Experimental Software Tools | Engineering Systems Design",
+    description: "Collection of experimental platforms, internal automation tools, and system architecture projects demonstrating systems design and technical problem-solving.",
+    url: "https://www.sanforddinkins.com/projects/systems-and-experiments",
   },
 }
 

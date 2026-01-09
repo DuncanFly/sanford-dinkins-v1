@@ -3,10 +3,26 @@ import Link from "next/link"
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: "Land Surveying Automation & Technical Tools | Sanford Dinkins, PE",
-  description: "Workflow automation and technical tools for land surveying operations, including job organization, time tracking, reporting, and structured data access.",
+  title: "Land Surveying Workflow Automation | Survey Operations Management Software",
+  description: "Workflow automation tools for land surveying firms. Automated job organization, survey time tracking, report generation, and structured data management. Reduces administrative overhead for survey operations and improves coordination with engineering teams.",
+  keywords: [
+    "land surveying software",
+    "survey workflow automation",
+    "surveying operations management",
+    "survey time tracking",
+    "survey job management",
+    "surveying automation tools",
+    "survey data management",
+    "survey reporting software",
+    "surveying firm software",
+  ],
   alternates: {
     canonical: "/projects/surveying-automation",
+  },
+  openGraph: {
+    title: "Land Surveying Workflow Automation | Survey Operations Management Software",
+    description: "Workflow automation tools for land surveying firms. Automated job organization, survey time tracking, report generation, and structured data management.",
+    url: "https://www.sanforddinkins.com/projects/surveying-automation",
   },
 }
 

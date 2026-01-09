@@ -10,10 +10,22 @@ const _jetbrainsMono = JetBrains_Mono({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.sanforddinkins.com"),
-  title: "Sanford Dinkins, PE | Civil Engineer",
+  title: "Sanford Dinkins, PE | Professional Civil Engineer & Engineering Automation Systems Designer",
   description:
-    "Licensed Professional Engineer specializing in site civil land development, with parallel experience designing scalable digital systems and tools.",
+    "Licensed Professional Engineer (PE) specializing in site civil engineering, land development, grading, drainage, and stormwater management. Parallel expertise in engineering workflow automation, billing systems, and technical tools for civil firms.",
   generator: "v0.app",
+  keywords: [
+    "Professional Engineer",
+    "Civil Engineer PE",
+    "Site Civil Engineering",
+    "Land Development Engineer",
+    "Grading and Drainage Design",
+    "Stormwater Management",
+    "Engineering Automation",
+    "Civil Engineering Software",
+    "Engineering Workflow Systems",
+    "QuickBooks Engineering Integration",
+  ],
 
   alternates: {
     canonical: "/",
@@ -46,16 +58,16 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: "https://www.sanforddinkins.com",
     siteName: "Sanford Dinkins, PE",
-    title: "Sanford Dinkins, PE | Civil Engineer",
+    title: "Sanford Dinkins, PE | Professional Civil Engineer & Engineering Automation Systems Designer",
     description:
-      "Licensed Professional Engineer specializing in site civil land development, with parallel experience designing scalable digital systems and tools.",
+      "Licensed Professional Engineer (PE) specializing in site civil engineering, land development, grading, drainage, and stormwater management. Parallel expertise in engineering workflow automation, billing systems, and technical tools for civil firms.",
   },
 
   twitter: {
     card: "summary_large_image",
-    title: "Sanford Dinkins, PE | Civil Engineer",
+    title: "Sanford Dinkins, PE | Professional Civil Engineer & Engineering Automation Systems Designer",
     description:
-      "Licensed Professional Engineer specializing in site civil land development, with parallel experience designing scalable digital systems and tools.",
+      "Licensed Professional Engineer (PE) specializing in site civil engineering, land development, grading, drainage, and stormwater management. Parallel expertise in engineering workflow automation.",
   },
 }
 

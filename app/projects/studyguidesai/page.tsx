@@ -3,10 +3,26 @@ import Link from "next/link"
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: "StudyGuidesAI | Sanford Dinkins, PE",
-  description: "Educational platform designed to convert complex material into structured, digestible study guides with AI-assisted summarization and curated structure.",
+  title: "StudyGuidesAI | AI-Powered Study Guide Generator for Technical Learning",
+  description: "AI-assisted educational platform that converts complex technical material into structured, hierarchical study guides. Designed for professional exam prep, technical certification, and academic learning with engineering documentation principles. Structured learning tools with AI summarization.",
+  keywords: [
+    "AI study guide generator",
+    "technical study guides",
+    "professional exam preparation",
+    "AI learning tools",
+    "structured study materials",
+    "technical education platform",
+    "engineering exam prep",
+    "AI-assisted learning",
+    "study guide software",
+  ],
   alternates: {
     canonical: "/projects/studyguidesai",
+  },
+  openGraph: {
+    title: "StudyGuidesAI | AI-Powered Study Guide Generator for Technical Learning",
+    description: "AI-assisted educational platform that converts complex technical material into structured, hierarchical study guides. Designed for professional exam prep and technical certification.",
+    url: "https://www.sanforddinkins.com/projects/studyguidesai",
   },
 }
 
