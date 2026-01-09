@@ -40,7 +40,7 @@ const structuredData = {
   offers: {
     "@type": "Offer",
     price: "0",
-    priceCurrency": "USD",
+    priceCurrency: "USD",
   },
   creator: {
     "@type": "Person",
