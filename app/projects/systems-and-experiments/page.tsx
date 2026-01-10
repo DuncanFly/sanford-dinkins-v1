@@ -58,45 +58,63 @@ const structuredData = {
       ],
     },
     {
-      "@type": "Article",
-      "@id": "https://sdinkins.com/projects/systems-and-experiments#article",
-      headline: "Systems Architecture & Experimental Software Tools",
-      description:
-        "Collection of experimental platforms, internal automation tools, and system architecture projects demonstrating technical problem-solving and systems design capabilities.",
-      author: {
-        "@type": "Person",
-        name: "Sanford Dinkins",
-        jobTitle: "Professional Civil Engineer",
-        url: "https://sdinkins.com",
+      "@type": "WebPage",
+      "@id": "https://sdinkins.com/projects/systems-and-experiments#webpage",
+      url: "https://sdinkins.com/projects/systems-and-experiments",
+      name: "Systems Architecture & Experimental Software Tools | Engineering Systems Design",
+      isPartOf: {
+        "@id": "https://sdinkins.com/#website",
       },
-      publisher: {
-        "@type": "Person",
-        name: "Sanford Dinkins",
+      about: {
+        "@id": "https://sdinkins.com/#person",
       },
-      mainEntityOfPage: {
-        "@type": "WebPage",
-        "@id": "https://sdinkins.com/projects/systems-and-experiments",
+      mainEntity: {
+        "@id": "https://sdinkins.com/projects/systems-and-experiments#case-study",
       },
-      articleSection: "Software Development",
-      keywords: [
-        "systems architecture",
-        "experimental tools",
-        "internal automation",
-        "software prototyping",
-      ],
+      breadcrumb: {
+        "@id": "https://sdinkins.com/projects/systems-and-experiments#breadcrumb",
+      },
     },
     {
       "@type": "CreativeWork",
-      "@id": "https://sdinkins.com/projects/systems-and-experiments#work",
-      name: "Systems Architecture & Experimental Tools",
+      "@id": "https://sdinkins.com/projects/systems-and-experiments#case-study",
+      name: "Systems Architecture & Experimental Tools Portfolio",
       description:
-        "Collection of experimental platforms, internal automation tools, and system architecture projects demonstrating technical problem-solving and systems design capabilities.",
-      creator: {
-        "@type": "Person",
-        name: "Sanford Dinkins",
-        jobTitle: "Professional Civil Engineer",
+        "Collection of experimental platforms, internal automation tools, and system architecture projects. Includes knowledge management systems (EverydayLayer), URL management tools (Truncs), recipe planning platforms (Paws & Palate), financial tracking tools (Balance the Checkbook), and various utilities for automating repetitive tasks and improving internal workflows. Demonstrates rapid prototyping, scope management, and systems thinking applied to domain-specific problems.",
+      author: {
+        "@id": "https://sdinkins.com/#person",
       },
-      url: "https://sdinkins.com/projects/systems-and-experiments",
+      creator: {
+        "@id": "https://sdinkins.com/#person",
+      },
+      about: [
+        {
+          "@type": "Thing",
+          name: "Systems Architecture",
+        },
+        {
+          "@type": "Thing",
+          name: "Software Prototyping",
+        },
+        {
+          "@type": "Thing",
+          name: "Internal Automation Tools",
+        },
+        {
+          "@type": "Thing",
+          name: "Workflow Optimization",
+        },
+      ],
+      keywords: [
+        "systems architecture",
+        "software prototyping",
+        "internal automation tools",
+        "knowledge management systems",
+        "workflow automation",
+        "rapid prototyping",
+      ],
+      dateCreated: "2023",
+      inLanguage: "en-US",
     },
   ],
 }

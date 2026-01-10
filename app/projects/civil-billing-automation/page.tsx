@@ -60,39 +60,68 @@ const structuredData = {
       ],
     },
     {
-      "@type": "Article",
-      "@id": "https://sdinkins.com/projects/civil-billing-automation#article",
-      headline: "Civil Engineering Billing Automation | QuickBooks Integration",
+      "@type": "WebPage",
+      "@id": "https://sdinkins.com/projects/civil-billing-automation#webpage",
+      url: "https://sdinkins.com/projects/civil-billing-automation",
+      name: "Civil Engineering Billing Automation | QuickBooks Integration",
+      isPartOf: {
+        "@id": "https://sdinkins.com/#website",
+      },
+      about: {
+        "@id": "https://sdinkins.com/#person",
+      },
+      mainEntity: {
+        "@id": "https://sdinkins.com/projects/civil-billing-automation#case-study",
+      },
+      breadcrumb: {
+        "@id": "https://sdinkins.com/projects/civil-billing-automation#breadcrumb",
+      },
+    },
+    {
+      "@type": "CreativeWork",
+      "@id": "https://sdinkins.com/projects/civil-billing-automation#case-study",
+      name: "Civil Billing Automation Platform",
       description:
-        "Engineering-grade billing automation platform for civil firms. Automated QuickBooks Online and QuickBooks Time integration for progress billing, time tracking, and accurate invoicing.",
+        "Design and implementation of an engineering-grade billing automation system for civil engineering firms, integrating QuickBooks Online and QuickBooks Time for progress billing, time tracking, and invoice accuracy. Eliminates manual spreadsheet workflows and reduces billing errors through automated data retrieval and engineering-specific logic.",
       author: {
-        "@type": "Person",
-        name: "Sanford Dinkins",
-        jobTitle: "Professional Civil Engineer",
-        url: "https://sdinkins.com",
+        "@id": "https://sdinkins.com/#person",
       },
-      publisher: {
-        "@type": "Person",
-        name: "Sanford Dinkins",
+      creator: {
+        "@id": "https://sdinkins.com/#person",
       },
-      mainEntityOfPage: {
-        "@type": "WebPage",
-        "@id": "https://sdinkins.com/projects/civil-billing-automation",
-      },
-      articleSection: "Software Development",
-      keywords: [
-        "civil engineering billing",
-        "QuickBooks automation",
-        "engineering workflow",
-        "billing automation",
+      about: [
+        {
+          "@type": "Thing",
+          name: "Civil Engineering Billing",
+        },
+        {
+          "@type": "Thing",
+          name: "QuickBooks Automation",
+        },
+        {
+          "@type": "Thing",
+          name: "Engineering Workflow Systems",
+        },
+        {
+          "@type": "Thing",
+          name: "Progress Billing Automation",
+        },
       ],
+      keywords: [
+        "civil engineering billing software",
+        "engineering progress billing",
+        "QuickBooks automation for engineers",
+        "engineering time tracking systems",
+        "automated invoicing for civil firms",
+        "engineering contract billing",
+      ],
+      dateCreated: "2024",
+      inLanguage: "en-US",
     },
     {
       "@type": "SoftwareApplication",
       "@id": "https://sdinkins.com/projects/civil-billing-automation#software",
       name: "Civil Billing Automation Platform",
-      description:
-        "Engineering-grade billing automation system for civil engineering firms. Integrates QuickBooks Online and QuickBooks Time for automated progress billing, time tracking, and accurate invoicing.",
       applicationCategory: "BusinessApplication",
       operatingSystem: "Web",
       offers: {
@@ -101,11 +130,8 @@ const structuredData = {
         priceCurrency: "USD",
       },
       creator: {
-        "@type": "Person",
-        name: "Sanford Dinkins",
-        jobTitle: "Professional Civil Engineer",
+        "@id": "https://sdinkins.com/#person",
       },
-      url: "https://sdinkins.com/projects/civil-billing-automation",
     },
   ],
 }

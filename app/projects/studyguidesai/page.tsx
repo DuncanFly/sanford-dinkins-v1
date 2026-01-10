@@ -59,39 +59,68 @@ const structuredData = {
       ],
     },
     {
-      "@type": "Article",
-      "@id": "https://sdinkins.com/projects/studyguidesai#article",
-      headline: "StudyGuidesAI | AI-Powered Study Guide Generator",
+      "@type": "WebPage",
+      "@id": "https://sdinkins.com/projects/studyguidesai#webpage",
+      url: "https://sdinkins.com/projects/studyguidesai",
+      name: "StudyGuidesAI | AI-Powered Study Guide Generator for Technical Learning",
+      isPartOf: {
+        "@id": "https://sdinkins.com/#website",
+      },
+      about: {
+        "@id": "https://sdinkins.com/#person",
+      },
+      mainEntity: {
+        "@id": "https://sdinkins.com/projects/studyguidesai#case-study",
+      },
+      breadcrumb: {
+        "@id": "https://sdinkins.com/projects/studyguidesai#breadcrumb",
+      },
+    },
+    {
+      "@type": "CreativeWork",
+      "@id": "https://sdinkins.com/projects/studyguidesai#case-study",
+      name: "StudyGuidesAI Educational Platform",
       description:
-        "AI-assisted educational platform for converting complex technical material into structured, hierarchical study guides. Designed for professional exam preparation and technical learning.",
+        "Design and development of an AI-assisted educational platform that converts complex technical material into structured, hierarchical study guides. System applies engineering documentation principles to educational content, emphasizing clarity, hierarchy, and retention. Designed for professional exam preparation, technical certification, and academic learning.",
       author: {
-        "@type": "Person",
-        name: "Sanford Dinkins",
-        jobTitle: "Professional Civil Engineer",
-        url: "https://sdinkins.com",
+        "@id": "https://sdinkins.com/#person",
       },
-      publisher: {
-        "@type": "Person",
-        name: "Sanford Dinkins",
+      creator: {
+        "@id": "https://sdinkins.com/#person",
       },
-      mainEntityOfPage: {
-        "@type": "WebPage",
-        "@id": "https://sdinkins.com/projects/studyguidesai",
-      },
-      articleSection: "Software Development",
-      keywords: [
-        "AI study guides",
-        "technical learning",
-        "exam preparation",
-        "educational AI",
+      about: [
+        {
+          "@type": "Thing",
+          name: "AI-Powered Study Tools",
+        },
+        {
+          "@type": "Thing",
+          name: "Technical Learning",
+        },
+        {
+          "@type": "Thing",
+          name: "Educational Technology",
+        },
+        {
+          "@type": "Thing",
+          name: "Professional Exam Preparation",
+        },
       ],
+      keywords: [
+        "AI study guide generator",
+        "technical study guides",
+        "professional exam preparation",
+        "AI learning tools",
+        "structured study materials",
+        "engineering exam prep",
+      ],
+      dateCreated: "2024",
+      inLanguage: "en-US",
     },
     {
       "@type": "SoftwareApplication",
       "@id": "https://sdinkins.com/projects/studyguidesai#software",
       name: "StudyGuidesAI",
-      description:
-        "AI-assisted educational platform for converting complex technical material into structured, hierarchical study guides. Designed for professional exam preparation and technical learning.",
       applicationCategory: "EducationalApplication",
       operatingSystem: "Web",
       offers: {
@@ -100,9 +129,7 @@ const structuredData = {
         priceCurrency: "USD",
       },
       creator: {
-        "@type": "Person",
-        name: "Sanford Dinkins",
-        jobTitle: "Professional Civil Engineer",
+        "@id": "https://sdinkins.com/#person",
       },
       url: "https://studyguidesai.com",
     },
