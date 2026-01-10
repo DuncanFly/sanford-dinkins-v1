@@ -19,7 +19,10 @@ export const metadata: Metadata = {
     "study guide software",
   ],
   alternates: {
-    canonical: "/projects/studyguidesai",
+    canonical: "https://sdinkins.com/projects/studyguidesai",
+    languages: {
+      "x-default": "https://sdinkins.com/projects/studyguidesai",
+    },
   },
   openGraph: {
     title: "StudyGuidesAI | AI-Powered Study Guide Generator for Technical Learning",
@@ -31,23 +34,79 @@ export const metadata: Metadata = {
 
 const structuredData = {
   "@context": "https://schema.org",
-  "@type": "SoftwareApplication",
-  name: "StudyGuidesAI",
-  description:
-    "AI-assisted educational platform for converting complex technical material into structured, hierarchical study guides. Designed for professional exam preparation and technical learning.",
-  applicationCategory: "EducationalApplication",
-  operatingSystem: "Web",
-  offers: {
-    "@type": "Offer",
-    price: "0",
-    priceCurrency: "USD",
-  },
-  creator: {
-    "@type": "Person",
-    name: "Sanford Dinkins",
-    jobTitle: "Professional Civil Engineer",
-  },
-  url: "https://studyguidesai.com",
+  "@graph": [
+    {
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        {
+          "@type": "ListItem",
+          position: 1,
+          name: "Home",
+          item: "https://sdinkins.com",
+        },
+        {
+          "@type": "ListItem",
+          position: 2,
+          name: "Projects",
+          item: "https://sdinkins.com/#projects",
+        },
+        {
+          "@type": "ListItem",
+          position: 3,
+          name: "StudyGuidesAI",
+          item: "https://sdinkins.com/projects/studyguidesai",
+        },
+      ],
+    },
+    {
+      "@type": "Article",
+      "@id": "https://sdinkins.com/projects/studyguidesai#article",
+      headline: "StudyGuidesAI | AI-Powered Study Guide Generator",
+      description:
+        "AI-assisted educational platform for converting complex technical material into structured, hierarchical study guides. Designed for professional exam preparation and technical learning.",
+      author: {
+        "@type": "Person",
+        name: "Sanford Dinkins",
+        jobTitle: "Professional Civil Engineer",
+        url: "https://sdinkins.com",
+      },
+      publisher: {
+        "@type": "Person",
+        name: "Sanford Dinkins",
+      },
+      mainEntityOfPage: {
+        "@type": "WebPage",
+        "@id": "https://sdinkins.com/projects/studyguidesai",
+      },
+      articleSection: "Software Development",
+      keywords: [
+        "AI study guides",
+        "technical learning",
+        "exam preparation",
+        "educational AI",
+      ],
+    },
+    {
+      "@type": "SoftwareApplication",
+      "@id": "https://sdinkins.com/projects/studyguidesai#software",
+      name: "StudyGuidesAI",
+      description:
+        "AI-assisted educational platform for converting complex technical material into structured, hierarchical study guides. Designed for professional exam preparation and technical learning.",
+      applicationCategory: "EducationalApplication",
+      operatingSystem: "Web",
+      offers: {
+        "@type": "Offer",
+        price: "0",
+        priceCurrency: "USD",
+      },
+      creator: {
+        "@type": "Person",
+        name: "Sanford Dinkins",
+        jobTitle: "Professional Civil Engineer",
+      },
+      url: "https://studyguidesai.com",
+    },
+  ],
 }
 
 export default function StudyGuidesAIPage() {

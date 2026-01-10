@@ -18,7 +18,10 @@ export const metadata: Metadata = {
     "technical prototypes",
   ],
   alternates: {
-    canonical: "/projects/systems-and-experiments",
+    canonical: "https://sdinkins.com/projects/systems-and-experiments",
+    languages: {
+      "x-default": "https://sdinkins.com/projects/systems-and-experiments",
+    },
   },
   openGraph: {
     title: "Systems Architecture & Experimental Software Tools | Engineering Systems Design",
@@ -30,16 +33,72 @@ export const metadata: Metadata = {
 
 const structuredData = {
   "@context": "https://schema.org",
-  "@type": "CreativeWork",
-  name: "Systems Architecture & Experimental Tools",
-  description:
-    "Collection of experimental platforms, internal automation tools, and system architecture projects demonstrating technical problem-solving and systems design capabilities.",
-  creator: {
-    "@type": "Person",
-    name: "Sanford Dinkins",
-    jobTitle: "Professional Civil Engineer",
-  },
-  url: "https://sdinkins.com/projects/systems-and-experiments",
+  "@graph": [
+    {
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        {
+          "@type": "ListItem",
+          position: 1,
+          name: "Home",
+          item: "https://sdinkins.com",
+        },
+        {
+          "@type": "ListItem",
+          position: 2,
+          name: "Projects",
+          item: "https://sdinkins.com/#projects",
+        },
+        {
+          "@type": "ListItem",
+          position: 3,
+          name: "Systems & Experiments",
+          item: "https://sdinkins.com/projects/systems-and-experiments",
+        },
+      ],
+    },
+    {
+      "@type": "Article",
+      "@id": "https://sdinkins.com/projects/systems-and-experiments#article",
+      headline: "Systems Architecture & Experimental Software Tools",
+      description:
+        "Collection of experimental platforms, internal automation tools, and system architecture projects demonstrating technical problem-solving and systems design capabilities.",
+      author: {
+        "@type": "Person",
+        name: "Sanford Dinkins",
+        jobTitle: "Professional Civil Engineer",
+        url: "https://sdinkins.com",
+      },
+      publisher: {
+        "@type": "Person",
+        name: "Sanford Dinkins",
+      },
+      mainEntityOfPage: {
+        "@type": "WebPage",
+        "@id": "https://sdinkins.com/projects/systems-and-experiments",
+      },
+      articleSection: "Software Development",
+      keywords: [
+        "systems architecture",
+        "experimental tools",
+        "internal automation",
+        "software prototyping",
+      ],
+    },
+    {
+      "@type": "CreativeWork",
+      "@id": "https://sdinkins.com/projects/systems-and-experiments#work",
+      name: "Systems Architecture & Experimental Tools",
+      description:
+        "Collection of experimental platforms, internal automation tools, and system architecture projects demonstrating technical problem-solving and systems design capabilities.",
+      creator: {
+        "@type": "Person",
+        name: "Sanford Dinkins",
+        jobTitle: "Professional Civil Engineer",
+      },
+      url: "https://sdinkins.com/projects/systems-and-experiments",
+    },
+  ],
 }
 
 export default function SystemsAndExperimentsPage() {

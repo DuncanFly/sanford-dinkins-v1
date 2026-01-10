@@ -19,7 +19,10 @@ export const metadata: Metadata = {
     "civil engineering QA/QC",
   ],
   alternates: {
-    canonical: "/projects/site-civil-engineering",
+    canonical: "https://sdinkins.com/projects/site-civil-engineering",
+    languages: {
+      "x-default": "https://sdinkins.com/projects/site-civil-engineering",
+    },
   },
   openGraph: {
     title: "Site Civil Engineering & Land Development Services | Professional Engineer",
@@ -31,23 +34,79 @@ export const metadata: Metadata = {
 
 const structuredData = {
   "@context": "https://schema.org",
-  "@type": "ProfessionalService",
-  name: "Site Civil Engineering & Land Development",
-  description:
-    "Professional civil engineering services for land development projects including grading, drainage, stormwater management, utilities coordination, and permitting.",
-  provider: {
-    "@type": "Person",
-    name: "Sanford Dinkins",
-    jobTitle: "Professional Civil Engineer",
-    hasCredential: {
-      "@type": "EducationalOccupationalCredential",
-      credentialCategory: "Professional License",
-      name: "Professional Engineer (PE)",
+  "@graph": [
+    {
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        {
+          "@type": "ListItem",
+          position: 1,
+          name: "Home",
+          item: "https://sdinkins.com",
+        },
+        {
+          "@type": "ListItem",
+          position: 2,
+          name: "Projects",
+          item: "https://sdinkins.com/#projects",
+        },
+        {
+          "@type": "ListItem",
+          position: 3,
+          name: "Site Civil Engineering",
+          item: "https://sdinkins.com/projects/site-civil-engineering",
+        },
+      ],
     },
-  },
-  serviceType: "Civil Engineering",
-  areaServed: "United States",
-  url: "https://sdinkins.com/projects/site-civil-engineering",
+    {
+      "@type": "Article",
+      "@id": "https://sdinkins.com/projects/site-civil-engineering#article",
+      headline: "Site Civil Engineering & Land Development Services",
+      description:
+        "Professional civil engineering services for land development projects including grading, drainage, stormwater management, utilities coordination, and permitting.",
+      author: {
+        "@type": "Person",
+        name: "Sanford Dinkins",
+        jobTitle: "Professional Civil Engineer",
+        url: "https://sdinkins.com",
+      },
+      publisher: {
+        "@type": "Person",
+        name: "Sanford Dinkins",
+      },
+      mainEntityOfPage: {
+        "@type": "WebPage",
+        "@id": "https://sdinkins.com/projects/site-civil-engineering",
+      },
+      articleSection: "Professional Services",
+      keywords: [
+        "site civil engineering",
+        "land development",
+        "grading design",
+        "stormwater management",
+      ],
+    },
+    {
+      "@type": "ProfessionalService",
+      "@id": "https://sdinkins.com/projects/site-civil-engineering#service",
+      name: "Site Civil Engineering & Land Development",
+      description:
+        "Professional civil engineering services for land development projects including grading, drainage, stormwater management, utilities coordination, and permitting.",
+      provider: {
+        "@type": "Person",
+        name: "Sanford Dinkins",
+        jobTitle: "Professional Civil Engineer",
+        hasCredential: {
+          "@type": "EducationalOccupationalCredential",
+          credentialCategory: "Professional License",
+          name: "Professional Engineer (PE)",
+        },
+      },
+      serviceType: "Civil Engineering",
+      areaServed: "United States",
+      url: "https://sdinkins.com/projects/site-civil-engineering",
+    },
+  ],
 }
 
 export default function SiteCivilEngineeringPage() {

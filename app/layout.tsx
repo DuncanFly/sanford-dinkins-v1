@@ -28,7 +28,10 @@ export const metadata: Metadata = {
   ],
 
   alternates: {
-    canonical: "/",
+    canonical: "https://sdinkins.com",
+    languages: {
+      "x-default": "https://sdinkins.com",
+    },
   },
 
   verification: {

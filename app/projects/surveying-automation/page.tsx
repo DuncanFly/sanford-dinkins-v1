@@ -19,7 +19,10 @@ export const metadata: Metadata = {
     "surveying firm software",
   ],
   alternates: {
-    canonical: "/projects/surveying-automation",
+    canonical: "https://sdinkins.com/projects/surveying-automation",
+    languages: {
+      "x-default": "https://sdinkins.com/projects/surveying-automation",
+    },
   },
   openGraph: {
     title: "Land Surveying Workflow Automation | Survey Operations Management Software",
@@ -31,18 +34,74 @@ export const metadata: Metadata = {
 
 const structuredData = {
   "@context": "https://schema.org",
-  "@type": "SoftwareApplication",
-  name: "Land Surveying Automation Tools",
-  description:
-    "Workflow automation and operations management tools for land surveying firms. Automates job organization, time tracking, report generation, and data integration with engineering systems.",
-  applicationCategory: "BusinessApplication",
-  operatingSystem: "Web",
-  creator: {
-    "@type": "Person",
-    name: "Sanford Dinkins",
-    jobTitle: "Professional Civil Engineer",
-  },
-  url: "https://sdinkins.com/projects/surveying-automation",
+  "@graph": [
+    {
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        {
+          "@type": "ListItem",
+          position: 1,
+          name: "Home",
+          item: "https://sdinkins.com",
+        },
+        {
+          "@type": "ListItem",
+          position: 2,
+          name: "Projects",
+          item: "https://sdinkins.com/#projects",
+        },
+        {
+          "@type": "ListItem",
+          position: 3,
+          name: "Surveying Automation",
+          item: "https://sdinkins.com/projects/surveying-automation",
+        },
+      ],
+    },
+    {
+      "@type": "Article",
+      "@id": "https://sdinkins.com/projects/surveying-automation#article",
+      headline: "Land Surveying Workflow Automation & Technical Tools",
+      description:
+        "Workflow automation and operations management tools for land surveying firms. Automates job organization, time tracking, report generation, and data integration with engineering systems.",
+      author: {
+        "@type": "Person",
+        name: "Sanford Dinkins",
+        jobTitle: "Professional Civil Engineer",
+        url: "https://sdinkins.com",
+      },
+      publisher: {
+        "@type": "Person",
+        name: "Sanford Dinkins",
+      },
+      mainEntityOfPage: {
+        "@type": "WebPage",
+        "@id": "https://sdinkins.com/projects/surveying-automation",
+      },
+      articleSection: "Software Development",
+      keywords: [
+        "surveying automation",
+        "workflow automation",
+        "survey operations",
+        "land surveying software",
+      ],
+    },
+    {
+      "@type": "SoftwareApplication",
+      "@id": "https://sdinkins.com/projects/surveying-automation#software",
+      name: "Land Surveying Automation Tools",
+      description:
+        "Workflow automation and operations management tools for land surveying firms. Automates job organization, time tracking, report generation, and data integration with engineering systems.",
+      applicationCategory: "BusinessApplication",
+      operatingSystem: "Web",
+      creator: {
+        "@type": "Person",
+        name: "Sanford Dinkins",
+        jobTitle: "Professional Civil Engineer",
+      },
+      url: "https://sdinkins.com/projects/surveying-automation",
+    },
+  ],
 }
 
 export default function SurveyingAutomationPage() {
