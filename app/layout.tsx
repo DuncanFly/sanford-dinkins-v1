@@ -9,7 +9,7 @@ const _geistMono = Geist_Mono({ subsets: ["latin"] })
 const _jetbrainsMono = JetBrains_Mono({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://www.sanforddinkins.com"),
+  metadataBase: new URL("https://sdinkins.com"),
   title: "Sanford Dinkins, PE | Professional Civil Engineer & Engineering Automation Systems Designer",
   description:
     "Licensed Professional Engineer (PE) specializing in site civil engineering, land development, grading, drainage, and stormwater management. Parallel expertise in engineering workflow automation, billing systems, and technical tools for civil firms.",
@@ -56,7 +56,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://www.sanforddinkins.com",
+    url: "https://sdinkins.com",
     siteName: "Sanford Dinkins, PE",
     title: "Sanford Dinkins, PE | Professional Civil Engineer & Engineering Automation Systems Designer",
     description:
@@ -82,7 +82,7 @@ const structuredData = {
   "@graph": [
     {
       "@type": "Person",
-      "@id": "https://www.sanforddinkins.com/#person",
+      "@id": "https://sdinkins.com/#person",
       name: "Sanford Dinkins",
       jobTitle: "Professional Civil Engineer",
       hasCredential: {
@@ -125,15 +125,15 @@ const structuredData = {
         "Software Development",
         "Systems Architecture",
       ],
-      url: "https://www.sanforddinkins.com",
-      sameAs: ["https://github.com/DuncanFly", "https://sdinkins.com"],
+      url: "https://sdinkins.com",
+      sameAs: ["https://github.com/DuncanFly"],
     },
     {
       "@type": "ProfessionalService",
-      "@id": "https://www.sanforddinkins.com/#service",
+      "@id": "https://sdinkins.com/#service",
       name: "Sanford Dinkins, PE - Engineering Services",
       provider: {
-        "@id": "https://www.sanforddinkins.com/#person",
+        "@id": "https://sdinkins.com/#person",
       },
       serviceType: "Civil Engineering",
       areaServed: "United States",
@@ -142,26 +142,29 @@ const structuredData = {
     },
     {
       "@type": "WebSite",
-      "@id": "https://www.sanforddinkins.com/#website",
-      url: "https://www.sanforddinkins.com",
+      "@id": "https://sdinkins.com/#website",
+      url: "https://sdinkins.com",
       name: "Sanford Dinkins, PE",
       description:
         "Licensed Professional Engineer specializing in site civil land development, with parallel experience designing scalable digital systems and tools.",
       publisher: {
-        "@id": "https://www.sanforddinkins.com/#person",
+        "@id": "https://sdinkins.com/#person",
       },
       inLanguage: "en-US",
     },
     {
       "@type": "ProfilePage",
-      "@id": "https://www.sanforddinkins.com/#webpage",
-      url: "https://www.sanforddinkins.com",
+      "@id": "https://sdinkins.com/#webpage",
+      url: "https://sdinkins.com",
       name: "Sanford Dinkins, PE | Professional Civil Engineer & Engineering Automation Systems Designer",
       isPartOf: {
-        "@id": "https://www.sanforddinkins.com/#website",
+        "@id": "https://sdinkins.com/#website",
       },
       about: {
-        "@id": "https://www.sanforddinkins.com/#person",
+        "@id": "https://sdinkins.com/#person",
+      },
+      mainEntity: {
+        "@id": "https://sdinkins.com/#person",
       },
       description:
         "Licensed Professional Engineer specializing in site civil land development, with parallel experience designing scalable digital systems and tools.",

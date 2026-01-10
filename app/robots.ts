@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: "/",
       disallow: ["/api/", "/_next/"],
     },
-    sitemap: "https://www.sanforddinkins.com/sitemap.xml",
+    sitemap: "https://sdinkins.com/sitemap.xml",
   }
 }

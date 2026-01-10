@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     title: "Systems Architecture & Experimental Software Tools | Engineering Systems Design",
     description:
       "Collection of experimental platforms, internal automation tools, and system architecture projects demonstrating systems design and technical problem-solving.",
-    url: "https://www.sanforddinkins.com/projects/systems-and-experiments",
+    url: "https://sdinkins.com/projects/systems-and-experiments",
   },
 }
 
@@ -39,7 +39,7 @@ const structuredData = {
     name: "Sanford Dinkins",
     jobTitle: "Professional Civil Engineer",
   },
-  url: "https://www.sanforddinkins.com/projects/systems-and-experiments",
+  url: "https://sdinkins.com/projects/systems-and-experiments",
 }
 
 export default function SystemsAndExperimentsPage() {

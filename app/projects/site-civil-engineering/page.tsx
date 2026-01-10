@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     title: "Site Civil Engineering & Land Development Services | Professional Engineer",
     description:
       "Licensed PE with site civil engineering expertise in grading design, drainage systems, stormwater management, utilities coordination, and municipal permitting for land development projects.",
-    url: "https://www.sanforddinkins.com/projects/site-civil-engineering",
+    url: "https://sdinkins.com/projects/site-civil-engineering",
   },
 }
 
@@ -47,7 +47,7 @@ const structuredData = {
   },
   serviceType: "Civil Engineering",
   areaServed: "United States",
-  url: "https://www.sanforddinkins.com/projects/site-civil-engineering",
+  url: "https://sdinkins.com/projects/site-civil-engineering",
 }
 
 export default function SiteCivilEngineeringPage() {

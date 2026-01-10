@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     title: "Land Surveying Workflow Automation | Survey Operations Management Software",
     description:
       "Workflow automation tools for land surveying firms. Automated job organization, survey time tracking, report generation, and structured data management.",
-    url: "https://www.sanforddinkins.com/projects/surveying-automation",
+    url: "https://sdinkins.com/projects/surveying-automation",
   },
 }
 
@@ -42,7 +42,7 @@ const structuredData = {
     name: "Sanford Dinkins",
     jobTitle: "Professional Civil Engineer",
   },
-  url: "https://www.sanforddinkins.com/projects/surveying-automation",
+  url: "https://sdinkins.com/projects/surveying-automation",
 }
 
 export default function SurveyingAutomationPage() {

@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     title: "Civil Engineering Billing Automation | QuickBooks Integration for Engineering Firms",
     description:
       "Engineering-grade billing automation platform for civil firms. Automated QuickBooks integration for progress billing, time tracking, and accurate invoicing.",
-    url: "https://www.sanforddinkins.com/projects/civil-billing-automation",
+    url: "https://sdinkins.com/projects/civil-billing-automation",
   },
 }
 
@@ -48,7 +48,7 @@ const structuredData = {
     name: "Sanford Dinkins",
     jobTitle: "Professional Civil Engineer",
   },
-  url: "https://www.sanforddinkins.com/projects/civil-billing-automation",
+  url: "https://sdinkins.com/projects/civil-billing-automation",
 }
 
 export default function CivilBillingAutomationPage() {

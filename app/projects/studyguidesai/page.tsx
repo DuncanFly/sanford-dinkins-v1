@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     title: "StudyGuidesAI | AI-Powered Study Guide Generator for Technical Learning",
     description:
       "AI-assisted educational platform that converts complex technical material into structured, hierarchical study guides. Designed for professional exam prep and technical certification.",
-    url: "https://www.sanforddinkins.com/projects/studyguidesai",
+    url: "https://sdinkins.com/projects/studyguidesai",
   },
 }
 
